@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16T13:53:43.656210+00:00",
+ "checked": "2026-11-16T13:54:11.088177+00:00",
  "providers": [
   {
    "id": "chatgpt",
@@ -332,17 +332,17 @@
  "pages": {
   "openai_training": {
    "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
-   "read": true,
+   "read": false,
    "hash": "edfc3d996337fbc3",
    "changed": null,
-   "words": 589
+   "words": 0
   },
   "openai_temp": {
    "url": "https://help.openai.com/en/articles/8914046-temporary-chat-faq",
-   "read": true,
+   "read": false,
    "hash": "7fd9e7e58370d6fd",
    "changed": null,
-   "words": 762
+   "words": 0
   },
   "anthropic_training": {
    "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
@@ -402,10 +402,10 @@
   },
   "perplexity_privacy": {
    "url": "https://www.perplexity.ai/hub/legal/privacy-policy",
-   "read": true,
+   "read": false,
    "hash": "c0fa2fb955d9f09a",
    "changed": null,
-   "words": 5184
+   "words": 0
   }
  },
  "log": []
