@@ -39,13 +39,21 @@ def main():
             changed = today.strftime("%Y-%m-%d"); log.insert(0, {"day": changed, "page": key, "url": url, "what": "The text of this page changed."})
         pages[key] = {"url": url, "read": bool(t), "hash": h or prev.get("hash"), "changed": changed, "words": len(t.split()) if t else 0}
     bad = 0
+    day = today.strftime("%Y-%m-%d")
+    before = {(p["id"], f): p[f] for p in old.get("providers", []) for f in ("trains", "switch", "kept", "private", "catch") if p.get(f)}
     for p in cfg["providers"]:
         for field in ("trains", "switch", "kept", "private", "catch"):
             c = p.get(field)
             if not c: continue
             t = texts.get(c["src"])
-            c["found"] = None if t is None else norm(c["quote"]) in norm(t)
             c["url"] = cfg["sources"][c["src"]]
+            prev = before.get((p["id"], field), {})
+            if t is None:   # page could not be read from here today: keep the last result and its date
+                same = prev.get("quote") == c["quote"]
+                c["found"] = prev.get("found") if same else None
+                c["checked"] = prev.get("checked") if same else None
+            else:
+                c["found"] = norm(c["quote"]) in norm(t); c["checked"] = day
             if c["found"] is False:
                 bad += 1
                 entry = {"day": today.strftime("%Y-%m-%d"), "page": c["src"], "url": c["url"], "what": f"{p['app']}: a quoted sentence is no longer on the page ({field})."}

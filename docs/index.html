@@ -116,7 +116,8 @@ footer.site .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space
     <div class="cols">
       <div><h3>Method</h3><ul>
         <li>I read each company's own privacy and help pages and picked the sentences that answer five questions: do they train on chats, where is the off switch, how long are chats kept, is there a private mode, and what is the catch.</li>
-        <li>A script checks every day that each sentence is still on the page, word for word. A green "still on the page" means it was found today.</li>
+        <li>A script checks every day that each sentence is still on the page, word for word. Each quote shows the date it was last confirmed.</li>
+        <li>Some companies block the server that runs the daily check. Those quotes keep their last confirmed date until I re-check them from my own computer.</li>
         <li>If a sentence is gone, the entry is marked in red until I re-read the policy and update it.</li>
         <li id="m-pages"></li>
       </ul></div>
@@ -143,7 +144,7 @@ const NONE={switch:"None described in the policy",kept:"No period given on the p
   let d; try{ d=await fetch("data/status.json").then(r=>r.json()) }catch(e){ const b=$("#err"); b.style.display="block"; b.textContent="The data could not be loaded. Please try again in a moment."; return }
   const P=d.providers, n=P.length, on=P.filter(p=>p.trains.status!=="noswitch").length, lock=P.filter(p=>p.trains.status==="noswitch").length;
   const lede=$("#lede"); lede.replaceChildren(el("b",null,`${on+lock} of ${n}`),document.createTextNode(` popular chatbots say they may use your conversations to train their AI. ${on} let you turn that off. Here is each one's off switch, in the company's own words.`));
-  $("#checked").textContent="Quotes last checked against the live policy pages on "+day(d.checked)+".";
+  $("#checked").textContent="Last check of the live policy pages: "+day(d.checked)+". Each quote shows its own date.";
   /* hero: one switch per app, flipping on in turn; a click jumps to that app */
   P.forEach((p,i)=>{ const b=el("button","sw"); b.type="button"; b.append(el("span","t"),el("b",null,p.app),el("span",null,p.trains.status==="noswitch"?"On, no off switch":p.trains.status==="setting"?"On while a setting is on":"On until you turn it off"));
     b.setAttribute("aria-label",`${p.app}: training is ${p.trains.status==="noswitch"?"on, with no off switch described":"on until you turn it off"}. Go to details.`);
@@ -155,7 +156,7 @@ const NONE={switch:"None described in the policy",kept:"No period given on the p
     v.append(document.createTextNode(c.says));
     const det=el("details"), q=el("blockquote"); det.append(el("summary",null,"Their exact words")); q.append(document.createTextNode("“"+c.quote+"”"));
     const ft=el("footer"), a=el("a",null,"Read the policy page"); a.href=c.url; a.target="_blank"; a.rel="noopener";
-    ft.append(c.found===true?el("span","ok","✓ Still on the page"):c.found===false?el("span","gone","✕ No longer on the page. Needs a re-read."):el("span",null,"Page could not be read today"),a); q.append(ft); det.append(q); v.append(det);
+    const when=c.checked?" (checked "+day(c.checked)+")":""; ft.append(c.found===true?el("span","ok","✓ On the page"+when):c.found===false?el("span","gone","✕ No longer on the page"+when+". Needs a re-read."):el("span",null,"Not yet confirmed"),a); q.append(ft); det.append(q); v.append(det);
     row.append(v); return row };
   P.forEach(p=>{ const card=el("article","card"); card.id="app-"+p.id; const left=el("div"); left.append(el("h3",null,p.app),el("div","mk",p.maker+" · "+p.plans));
     const bd=el("div","badge"+(p.trains.status==="noswitch"?" noswitch":"")); bd.append(el("i",null,p.trains.status==="noswitch"?"●":"◐"),document.createTextNode(p.trains.status==="noswitch"?"On, no off switch":p.trains.status==="setting"?"On while a setting is on":"On unless you turn it off")); left.append(bd);

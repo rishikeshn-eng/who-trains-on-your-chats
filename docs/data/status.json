@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16T13:53:03.647575+00:00",
+ "checked": "2026-11-16T13:53:43.656210+00:00",
  "providers": [
   {
    "id": "chatgpt",
@@ -11,36 +11,41 @@
     "says": "Yes, unless you turn it off",
     "quote": "When you use our services for individuals (Free, Plus, Pro), we may use your content to train our models.",
     "src": "openai_training",
-    "found": null,
-    "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance"
+    "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
+    "found": true,
+    "checked": "2026-11-16"
    },
    "switch": {
     "says": "Settings, then Data controls, then turn off \"Improve the model for everyone\"",
     "quote": "To opt out, turn off Improve the model for everyone under Settings > Data controls in ChatGPT, or select Do not train on my content in our Privacy Portal.",
     "src": "openai_training",
-    "found": null,
-    "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance"
+    "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
+    "found": true,
+    "checked": "2026-11-16"
    },
    "kept": {
     "says": "Even a temporary chat may be kept for up to 30 days.",
     "quote": "OpenAI may keep a copy of a temporary chat for up to 30 days for safety purposes.",
     "src": "openai_temp",
-    "found": null,
-    "url": "https://help.openai.com/en/articles/8914046-temporary-chat-faq"
+    "url": "https://help.openai.com/en/articles/8914046-temporary-chat-faq",
+    "found": true,
+    "checked": "2026-11-16"
    },
    "private": {
     "says": "Temporary chat: not used for training",
     "quote": "A temporary chat stays out of your chat history and is not used to improve OpenAI models while it remains temporary.",
     "src": "openai_temp",
-    "found": null,
-    "url": "https://help.openai.com/en/articles/8914046-temporary-chat-faq"
+    "url": "https://help.openai.com/en/articles/8914046-temporary-chat-faq",
+    "found": true,
+    "checked": "2026-11-16"
    },
    "catch": {
     "says": "A thumbs up or down can send the whole conversation to training.",
     "quote": "If you choose to provide feedback, the entire conversation associated with that feedback may be used to train our models.",
     "src": "openai_training",
-    "found": null,
-    "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance"
+    "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
+    "found": true,
+    "checked": "2026-11-16"
    }
   },
   {
@@ -53,36 +58,41 @@
     "says": "Yes, unless you turn it off",
     "quote": "We may use your Inputs and Outputs to train and improve Anthropic AI models, unless you opt out through your account settings.",
     "src": "anthropic_privacy",
+    "url": "https://www.anthropic.com/legal/privacy",
     "found": true,
-    "url": "https://www.anthropic.com/legal/privacy"
+    "checked": "2026-11-16"
    },
    "switch": {
     "says": "Privacy settings, then turn off the model improvement setting",
     "quote": "If you decide to turn off the model improvement setting, we will not use your previous or new chats or coding sessions for future model training.",
     "src": "anthropic_retention",
+    "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
     "found": true,
-    "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data"
+    "checked": "2026-11-16"
    },
    "kept": {
     "says": "If you allow training, your data can be kept for up to 5 years.",
     "quote": "If you allow us to use your chats or coding sessions to improve Claude, we may retain your data in a de-identified format for up to 5 years in our model training pipelines.",
     "src": "anthropic_retention",
+    "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
     "found": true,
-    "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data"
+    "checked": "2026-11-16"
    },
    "private": {
     "says": "Incognito chat: not used for training",
     "quote": "Your Incognito chats are not used to improve Claude, even if you have enabled Model Improvement in your Privacy Settings.",
     "src": "anthropic_training",
+    "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
     "found": true,
-    "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training"
+    "checked": "2026-11-16"
    },
    "catch": {
     "says": "Chats flagged for breaking the rules are kept for up to 2 years.",
     "quote": "We retain inputs and outputs for up to 2 years and trust and safety classification scores for up to 7 years if your chat or session is flagged by our automated trust and safety systems as violating our Usage Policy.",
     "src": "anthropic_retention",
+    "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
     "found": true,
-    "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data"
+    "checked": "2026-11-16"
    }
   },
   {
@@ -95,36 +105,41 @@
     "says": "Yes, while \"Keep Activity\" is on",
     "quote": "If that setting is on, don’t enter data that’s confidential or that you wouldn’t want a reviewer to see or Google to use to improve its services.",
     "src": "google_hub",
+    "url": "https://support.google.com/gemini/answer/13594961?hl=en",
     "found": true,
-    "url": "https://support.google.com/gemini/answer/13594961?hl=en"
+    "checked": "2026-11-16"
    },
    "switch": {
     "says": "Gemini Apps Activity, then turn off \"Keep Activity\"",
     "quote": "To stop your future chats from being reviewed to improve Google services, turn off your Keep Activity setting.",
     "src": "google_hub",
+    "url": "https://support.google.com/gemini/answer/13594961?hl=en",
     "found": true,
-    "url": "https://support.google.com/gemini/answer/13594961?hl=en"
+    "checked": "2026-11-16"
    },
    "kept": {
     "says": "18 months by default. You can change it to 3 months, 36 months or forever.",
     "quote": "You can change your auto-delete setting in Gemini Apps Activity from the default of 18 months to 3 months, 36 months, or indefinite.",
     "src": "google_hub",
+    "url": "https://support.google.com/gemini/answer/13594961?hl=en",
     "found": true,
-    "url": "https://support.google.com/gemini/answer/13594961?hl=en"
+    "checked": "2026-11-16"
    },
    "private": {
     "says": "Temporary chat: not used for training",
     "quote": "Temporary chats are not used to train Google’s AI models.",
     "src": "google_hub",
+    "url": "https://support.google.com/gemini/answer/13594961?hl=en",
     "found": true,
-    "url": "https://support.google.com/gemini/answer/13594961?hl=en"
+    "checked": "2026-11-16"
    },
    "catch": {
     "says": "People may read your chats, and the ones they read aren't deleted when you delete your activity.",
     "quote": "Chats reviewed by human reviewers (and related data like your language, device type, location info, or feedback) are not deleted when you delete your activity.",
     "src": "google_hub",
+    "url": "https://support.google.com/gemini/answer/13594961?hl=en",
     "found": true,
-    "url": "https://support.google.com/gemini/answer/13594961?hl=en"
+    "checked": "2026-11-16"
    }
   },
   {
@@ -137,30 +152,34 @@
     "says": "Yes, unless you opt out",
     "quote": "You can opt out of use of your conversation activity for model training at any time.",
     "src": "ms_faq",
+    "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f",
     "found": true,
-    "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f"
+    "checked": "2026-11-16"
    },
    "switch": {
     "says": "A model training control in Copilot's settings",
     "quote": "You can also control whether Copilot uses your conversation activity for model training or to personalize your experience.",
     "src": "ms_faq",
+    "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f",
     "found": true,
-    "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f"
+    "checked": "2026-11-16"
    },
    "kept": {
     "says": "18 months by default",
     "quote": "By default, we store conversation activity for 18 months.",
     "src": "ms_faq",
+    "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f",
     "found": true,
-    "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f"
+    "checked": "2026-11-16"
    },
    "private": null,
    "catch": {
     "says": "Personalisation is a separate setting, and it is on by default.",
     "quote": "If personalization is available to you, it will be on by default.",
     "src": "ms_faq",
+    "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f",
     "found": true,
-    "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f"
+    "checked": "2026-11-16"
    }
   },
   {
@@ -173,36 +192,41 @@
     "says": "Yes, unless you turn it off",
     "quote": "We may use your content and interactions with Grok (e.g., prompts, searches, and other materials you submit) along with Grok's responses to train our models.",
     "src": "xai_faq",
+    "url": "https://x.ai/legal/faq",
     "found": true,
-    "url": "https://x.ai/legal/faq"
+    "checked": "2026-11-16"
    },
    "switch": {
     "says": "Settings, then Data Controls, then \"Improve the model\"",
     "quote": "Mobile App Data Controls for Training Grok: On the mobile app, to select or deselect using your content for model training, go to Settings, Data Controls, and select or deselect “Improve the model.”",
     "src": "xai_faq",
+    "url": "https://x.ai/legal/faq",
     "found": true,
-    "url": "https://x.ai/legal/faq"
+    "checked": "2026-11-16"
    },
    "kept": {
     "says": "Private Chat is deleted within 30 days. No fixed period given for regular chats.",
     "quote": "When using Private Chat, your conversation history will not be viewable to you and will be deleted from SpaceXSI systems within 30 days.",
     "src": "xai_faq",
+    "url": "https://x.ai/legal/faq",
     "found": true,
-    "url": "https://x.ai/legal/faq"
+    "checked": "2026-11-16"
    },
    "private": {
     "says": "Private Chat: not used for training",
     "quote": "When using Private Chat, where available, your content and interactions are not used for model training.",
     "src": "xai_faq",
+    "url": "https://x.ai/legal/faq",
     "found": true,
-    "url": "https://x.ai/legal/faq"
+    "checked": "2026-11-16"
    },
    "catch": {
     "says": "Turning it off only covers new conversations.",
     "quote": "Once you select that your data should not be used for training, your new conversations will not be used to train our models.",
     "src": "xai_faq",
+    "url": "https://x.ai/legal/faq",
     "found": true,
-    "url": "https://x.ai/legal/faq"
+    "checked": "2026-11-16"
    }
   },
   {
@@ -215,15 +239,17 @@
     "says": "Yes, unless you opt out",
     "quote": "Input and output data are used by default to train our artificial intelligence models, unless you opt out of training at any time.",
     "src": "mistral_help",
+    "url": "https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models",
     "found": true,
-    "url": "https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models"
+    "checked": "2026-11-16"
    },
    "switch": {
     "says": "You can opt out at any time. This page doesn't give the menu path.",
     "quote": "You have the right to opt out of this program at any time.",
     "src": "mistral_help",
+    "url": "https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models",
     "found": true,
-    "url": "https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models"
+    "checked": "2026-11-16"
    },
    "kept": null,
    "private": null,
@@ -231,8 +257,9 @@
     "says": "A thumbs up or down lets them use that chat, whatever your setting.",
     "quote": "In any case, and whichever subscription plan you adhere to, providing feedback by using the \"thumbs up\" or \"thumbs down\" button and adding a comment authorize us to use your rating, your input and output in order to improve the behavior of our artificial intelligence models.",
     "src": "mistral_help",
+    "url": "https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models",
     "found": true,
-    "url": "https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models"
+    "checked": "2026-11-16"
    }
   },
   {
@@ -245,24 +272,27 @@
     "says": "Yes. The policy describes no off switch.",
     "quote": "To improve and develop the Services and to train and improve our technology, such as our machine learning models and algorithms.",
     "src": "deepseek_privacy",
+    "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
     "found": true,
-    "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html"
+    "checked": "2026-11-16"
    },
    "switch": null,
    "kept": {
     "says": "For as long as you have an account",
     "quote": "For example, when we process your Personal Data to provide you with the Services, we keep this Personal Data for as long as you have an account.",
     "src": "deepseek_privacy",
+    "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
     "found": true,
-    "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html"
+    "checked": "2026-11-16"
    },
    "private": null,
    "catch": {
     "says": "Your data is stored in China.",
     "quote": "To provide you with our services, we directly collect, process and store your Personal Data in People's Republic of China.",
     "src": "deepseek_privacy",
+    "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
     "found": true,
-    "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html"
+    "checked": "2026-11-16"
    }
   },
   {
@@ -275,8 +305,9 @@
     "says": "It may. The policy page describes no off switch.",
     "quote": "Improve or create services and products, including our AI models.",
     "src": "perplexity_privacy",
-    "found": null,
-    "url": "https://www.perplexity.ai/hub/legal/privacy-policy"
+    "url": "https://www.perplexity.ai/hub/legal/privacy-policy",
+    "found": true,
+    "checked": "2026-11-16"
    },
    "switch": null,
    "kept": null,
@@ -285,8 +316,9 @@
     "says": "Email content is excluded from training.",
     "quote": "We do not use the content of emails to create, train, improve, or fine-tune AI models.",
     "src": "perplexity_privacy",
-    "found": null,
-    "url": "https://www.perplexity.ai/hub/legal/privacy-policy"
+    "url": "https://www.perplexity.ai/hub/legal/privacy-policy",
+    "found": true,
+    "checked": "2026-11-16"
    }
   }
  ],
@@ -300,17 +332,17 @@
  "pages": {
   "openai_training": {
    "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
-   "read": false,
+   "read": true,
    "hash": "edfc3d996337fbc3",
    "changed": null,
-   "words": 0
+   "words": 589
   },
   "openai_temp": {
    "url": "https://help.openai.com/en/articles/8914046-temporary-chat-faq",
-   "read": false,
+   "read": true,
    "hash": "7fd9e7e58370d6fd",
    "changed": null,
-   "words": 0
+   "words": 762
   },
   "anthropic_training": {
    "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
@@ -370,10 +402,10 @@
   },
   "perplexity_privacy": {
    "url": "https://www.perplexity.ai/hub/legal/privacy-policy",
-   "read": false,
+   "read": true,
    "hash": "c0fa2fb955d9f09a",
    "changed": null,
-   "words": 0
+   "words": 5184
   }
  },
  "log": []
