@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16T13:54:11.088177+00:00",
+ "checked": "2026-11-17T09:43:20.861859+00:00",
  "providers": [
   {
    "id": "chatgpt",
@@ -60,7 +60,7 @@
     "src": "anthropic_privacy",
     "url": "https://www.anthropic.com/legal/privacy",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "switch": {
     "says": "Privacy settings, then turn off the model improvement setting",
@@ -68,7 +68,7 @@
     "src": "anthropic_retention",
     "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "kept": {
     "says": "If you allow training, your data can be kept for up to 5 years.",
@@ -76,7 +76,7 @@
     "src": "anthropic_retention",
     "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "private": {
     "says": "Incognito chat: not used for training",
@@ -84,7 +84,7 @@
     "src": "anthropic_training",
     "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "catch": {
     "says": "Chats flagged for breaking the rules are kept for up to 2 years.",
@@ -92,7 +92,7 @@
     "src": "anthropic_retention",
     "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    }
   },
   {
@@ -106,24 +106,24 @@
     "quote": "If that setting is on, don’t enter data that’s confidential or that you wouldn’t want a reviewer to see or Google to use to improve its services.",
     "src": "google_hub",
     "url": "https://support.google.com/gemini/answer/13594961?hl=en",
-    "found": true,
-    "checked": "2026-11-16"
+    "found": false,
+    "checked": "2026-11-17"
    },
    "switch": {
     "says": "Gemini Apps Activity, then turn off \"Keep Activity\"",
     "quote": "To stop your future chats from being reviewed to improve Google services, turn off your Keep Activity setting.",
     "src": "google_hub",
     "url": "https://support.google.com/gemini/answer/13594961?hl=en",
-    "found": true,
-    "checked": "2026-11-16"
+    "found": false,
+    "checked": "2026-11-17"
    },
    "kept": {
     "says": "18 months by default. You can change it to 3 months, 36 months or forever.",
     "quote": "You can change your auto-delete setting in Gemini Apps Activity from the default of 18 months to 3 months, 36 months, or indefinite.",
     "src": "google_hub",
     "url": "https://support.google.com/gemini/answer/13594961?hl=en",
-    "found": true,
-    "checked": "2026-11-16"
+    "found": false,
+    "checked": "2026-11-17"
    },
    "private": {
     "says": "Temporary chat: not used for training",
@@ -131,15 +131,15 @@
     "src": "google_hub",
     "url": "https://support.google.com/gemini/answer/13594961?hl=en",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "catch": {
     "says": "People may read your chats, and the ones they read aren't deleted when you delete your activity.",
     "quote": "Chats reviewed by human reviewers (and related data like your language, device type, location info, or feedback) are not deleted when you delete your activity.",
     "src": "google_hub",
     "url": "https://support.google.com/gemini/answer/13594961?hl=en",
-    "found": true,
-    "checked": "2026-11-16"
+    "found": false,
+    "checked": "2026-11-17"
    }
   },
   {
@@ -154,7 +154,7 @@
     "src": "ms_faq",
     "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "switch": {
     "says": "A model training control in Copilot's settings",
@@ -162,7 +162,7 @@
     "src": "ms_faq",
     "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "kept": {
     "says": "18 months by default",
@@ -170,7 +170,7 @@
     "src": "ms_faq",
     "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "private": null,
    "catch": {
@@ -179,7 +179,7 @@
     "src": "ms_faq",
     "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    }
   },
   {
@@ -194,7 +194,7 @@
     "src": "xai_faq",
     "url": "https://x.ai/legal/faq",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "switch": {
     "says": "Settings, then Data Controls, then \"Improve the model\"",
@@ -202,7 +202,7 @@
     "src": "xai_faq",
     "url": "https://x.ai/legal/faq",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "kept": {
     "says": "Private Chat is deleted within 30 days. No fixed period given for regular chats.",
@@ -210,7 +210,7 @@
     "src": "xai_faq",
     "url": "https://x.ai/legal/faq",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "private": {
     "says": "Private Chat: not used for training",
@@ -218,7 +218,7 @@
     "src": "xai_faq",
     "url": "https://x.ai/legal/faq",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "catch": {
     "says": "Turning it off only covers new conversations.",
@@ -226,7 +226,7 @@
     "src": "xai_faq",
     "url": "https://x.ai/legal/faq",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    }
   },
   {
@@ -241,7 +241,7 @@
     "src": "mistral_help",
     "url": "https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "switch": {
     "says": "You can opt out at any time. This page doesn't give the menu path.",
@@ -249,7 +249,7 @@
     "src": "mistral_help",
     "url": "https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "kept": null,
    "private": null,
@@ -259,7 +259,7 @@
     "src": "mistral_help",
     "url": "https://help.mistral.ai/en/articles/347617-do-you-use-my-user-data-to-train-your-artificial-intelligence-models",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    }
   },
   {
@@ -274,7 +274,7 @@
     "src": "deepseek_privacy",
     "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "switch": null,
    "kept": {
@@ -283,7 +283,7 @@
     "src": "deepseek_privacy",
     "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    },
    "private": null,
    "catch": {
@@ -292,7 +292,7 @@
     "src": "deepseek_privacy",
     "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
     "found": true,
-    "checked": "2026-11-16"
+    "checked": "2026-11-17"
    }
   },
   {
@@ -368,9 +368,9 @@
   "google_hub": {
    "url": "https://support.google.com/gemini/answer/13594961?hl=en",
    "read": true,
-   "hash": "ed051bf1d44475c1",
-   "changed": null,
-   "words": 8624
+   "hash": "86fe2543793eb0a4",
+   "changed": "2026-11-17",
+   "words": 9173
   },
   "ms_faq": {
    "url": "https://support.microsoft.com/en-us/topic/privacy-faq-for-microsoft-copilot-27b3a435-8dc9-4b55-9a4b-58eeb9647a7f",
@@ -408,5 +408,36 @@
    "words": 0
   }
  },
- "log": []
+ "log": [
+  {
+   "day": "2026-11-17",
+   "page": "google_hub",
+   "url": "https://support.google.com/gemini/answer/13594961?hl=en",
+   "what": "Gemini: a quoted sentence is no longer on the page (catch)."
+  },
+  {
+   "day": "2026-11-17",
+   "page": "google_hub",
+   "url": "https://support.google.com/gemini/answer/13594961?hl=en",
+   "what": "Gemini: a quoted sentence is no longer on the page (kept)."
+  },
+  {
+   "day": "2026-11-17",
+   "page": "google_hub",
+   "url": "https://support.google.com/gemini/answer/13594961?hl=en",
+   "what": "Gemini: a quoted sentence is no longer on the page (switch)."
+  },
+  {
+   "day": "2026-11-17",
+   "page": "google_hub",
+   "url": "https://support.google.com/gemini/answer/13594961?hl=en",
+   "what": "Gemini: a quoted sentence is no longer on the page (trains)."
+  },
+  {
+   "day": "2026-11-17",
+   "page": "google_hub",
+   "url": "https://support.google.com/gemini/answer/13594961?hl=en",
+   "what": "The text of this page changed."
+  }
+ ]
 }
